@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/studyframework_0.1"
+	xmlns:tns="http://www.example.org/studyframework_0.1"
+	elementFormDefault="qualified">
+	<element name="beans">
+		<complexType>
+			<sequence>
+				<element ref="tns:bean"/>
+			</sequence>
+		</complexType>
+	</element>
+	<element name="bean">
+		<complexType>
+			<attribute name="id" type="string" />
+			<attribute name="action" type="string" />
+			<attribute name="method" type="string" />
+			<attribute name="class" type="string" />
+			<attribute name="ref" type="string" />
+		</complexType>
+	</element>
+</schema>
